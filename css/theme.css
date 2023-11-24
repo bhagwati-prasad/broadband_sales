@@ -1,0 +1,28 @@
+/*
+ * NOTE: ALL color values are written in RGB format. Eg white = 255, 255, 255 ; black = 0, 0, 0
+ */
+:root {
+    /* Start Color Palette */
+    --theme_primaryColor: var(--bs-primary-rgb);
+    --theme_secondaryColor: var(--bs-secondary-rgb);
+    --theme_accentColor: var(--bs-secondary-rgb);
+    --theme_successColor: var(--bs-success-rgb);
+    --theme_infoColor: var(--bs-info-rgb);
+    --theme_warningColor: var(--bs-warning-rgb);
+    --theme_dangerColor: var(--bs-danger-rgb);
+    --theme_darkColor: var(--bs_dark-rgb);
+    --theme_lightColor: var(--bs_light-rgb);
+    --theme_linkTextColor: var(--bs-primary-rgb);
+    /* End Color Palette */
+
+
+    /* Component Colors */
+    --theme_offerBanner_textColor: var(--bs-primary-rgb);
+    --theme_offerBanner_backgroundColor: var(--bs-primary-rgb);
+    --theme_offerBanner_backgroundOpacity: 0.3;
+    --theme_logoTicker_backgroundColor: var(--bs-secondary-bg-subtle);
+    /* End Component Colors */
+
+    /* Start Page Config */
+    /* End Page Config */
+}
