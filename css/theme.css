@@ -15,14 +15,34 @@
     --theme_linkTextColor: var(--bs-primary-rgb);
     /* End Color Palette */
 
+    /* Start Element Colors */
+    --theme_body_background: 250,250,250;
+    --theme_h1Color: 0,0,0;
+    --theme_h2Color: 0,0,0;
+    --theme_h3Color: 0,0,0;
+    --theme_h4Color: 0,0,0;
+    --theme_h5Color: 0,0,0;
+    --theme_h6Color: 0,0,0;
+    /* End Element Colors */
+
 
     /* Component Colors */
     --theme_offerBanner_textColor: var(--bs-primary-rgb);
-    --theme_offerBanner_backgroundColor: var(--bs-primary-rgb);
-    --theme_offerBanner_backgroundOpacity: 0.3;
+    --theme_offerBanner_backgroundColor: 238,238,238;
+    --theme_offerBanner_backgroundOpacity: 0.2;
+    --theme_hero_background: 250,250,250;
     --theme_logoTicker_backgroundColor: var(--bs-secondary-bg-subtle);
+
+    --theme_footerTop_background: 49,50,59;
+    --theme_footerTop_color: 255,255,255;
+    --theme_footerBottom_background: 44,45,49;
+    --theme_footerBottom_color: 255,255,255;
+
+    --theme_internetTypesOdd_background: 250,250,250;
+    --theme_internetTypesEven_background: 240,255,255;
     /* End Component Colors */
 
+    
     /* Start Page Config */
     /* End Page Config */
 }

@@ -27,14 +27,17 @@
 <body>
     <div id="pageWrapper" class="container-fluid">
         <header>
-            <section class="topMessage bg-dark text-light text-center px-body">
-                Some message
+            <section class="topMessage text-light text-end px-body">
+                <a href="tel:800-000-00000" class="text-white fw-bold">
+                    <i class="fa fa-phone"></i>
+                    800-000-0000
+                </a>
             </section>
             <section id="headerTop">
                 <nav class="navbar navbar-expand-lg w-100 px-body">
                     <div class="container-fluid px-0">
                         <a class="navbar-brand brand-logo" href="/index.html">
-                            <img src="/assets/images/logo.svg" alt="Fast Internet Geek" class="d-block h-100">
+                            <img src="/assets/images/logo.png" alt="Fast Internet Geek" class="d-block h-100">
                         </a>
                         <!-- Mobile view nav wrap -->
                         <div>
@@ -46,292 +49,1028 @@
                         <!-- Collapse -->
                         <div class="collapse navbar-collapse flex-row-reverse" id="navbar-default">
                             <ul class="navbar-nav mt-3 mt-lg-0">
-                                <li class="nav-item">
+                                <li class="nav-item fw-bold">
                                     <a class="nav-link" href="#">Home</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item fw-bold">
                                     <a class="nav-link" href="#">Internet</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item fw-bold">
                                     <a class="nav-link" href="#">TV</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item fw-bold">
                                     <a class="nav-link" href="#">Home Phone</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarAccount" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Providers</a>
-                                    <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarAccount">
-                                        <li>
-                                            <a class="nav-link" href="#">Browse</a>
-                                        </li>
+                                    <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarAccount" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Providers</a>
+                                    <ul class="dropdown-menu dropdown-menu-arrow dropdown-menu-end" aria-labelledby="navbarAccount">
+                                        <li><a class="nav-link" href="#">AT&T</a></li>
+                                        <li><a class="nav-link" href="#">CenturyLink</a></li>
+                                        <li><a class="nav-link" href="#">Frontier Communications</a></li>
+                                        <li><a class="nav-link" href="#">Ziply</a></li>
+                                        <li><a class="nav-link" href="#">Fidium</a></li>
+                                        <li><a class="nav-link" href="#">Windstream</a></li>
+                                        <li><a class="nav-link" href="#">Earthlink</a></li>
+                                        <li><a class="nav-link" href="#">Metronet</a></li>
+                                        <li><a class="nav-link" href="#">Spectrum</a></li>
                                     </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Terms and Conditions</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Privacy Policy</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </section>
-            <section class="offerBanner px-body py-4">
+            <section class="offerBanner px-body py-3">
                 <div class="row">
-                    <div class="offerIcon col-md-2 col-12 d-flex align-items-center">
-                        <img src="/assets/images/best-price.svg" class="d-block w-100">
-                    </div>
-                    <div class="offerMessage col-md-8 col-12 d-flex align-items-center">
-                        Best offer message
-                    </div>
-                </div>
-            </section>
-            <section class="hero">
-                <div class="container col-xxl-8 px-4 py-5">
-                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                        <div class="col-10 col-sm-8 col-lg-6">
-                            <img src="https://placehold.co/700x500" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    <div class="col-md-2 col-12 offset-md-1">
+                        <div class="offerIcon d-flex align-items-center">
+                            <img src="/assets/images/best-seller-100.png" class="d-block w-100">
                         </div>
-                        <div class="col-lg-6">
-                            <h1 class="display-5 fw-bold lh-1 mb-3">Broadband sale tagline</h1>
-                            <p class="lead">Some more information about deals or maybe some service.</p>
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                            </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <p class="offerMessage d-flex align-items-start justify-content-center h-100 h5 fw-bold flex-column text-dark">
+                            Experience Lightning-fast Internet at <span>Unbeatable Prices!</span>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <p class="offerMessage d-flex align-items-start justify-content-center h-100 flex-column text-dark">
+                            Deals starting from <b class="h4 fw-bold text-primary">$14.99/mo.</b>
+                        </p>
+                    </div>
+                    <div class="col-md-1 col-12 d-flex justify-content-start">
+                        <div class="offerIcon d-flex align-items-center">
+                            <i class="fa-solid fa-bullhorn fa-flip-horizontal"></i>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="logoTicker">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="https://placehold.co/100x100" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img src="https://placehold.co/100x100" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://placehold.co/100x100" class="d-block w-100" alt="...">
+            <section class="container-fluid hero py-4">
+                <div class="px-4 py-5 text-center">
+                    <h1 class="h3 fw-bold pt-4 pb-2">Compare best deals from top internet providers in your area on a single phone call </h1>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="lead mb-4">Find deals of your choice from a broad of internet, internet TV and home phone providers.</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center py-4">
+                            <button type="button" class="btn btn-primary btn-lg px-4 gap-3 fw-bold">800-000-0000</button>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </section>
         </header>
         <div id="pageContent">
-            <section class="container my-5">
-                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-                    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                        <h2 class="display-4 fw-bold lh-1 mb-4">This is really fast internet</h2>
-                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 mt-4">
-                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">View Pricing</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                        <img class="rounded-lg-3" src="/assets/images/best-price.svg" alt="" width="720">
-                    </div>
-                </div>
-            </section>
-            <section class="featureList-1">
-                <div class="container px-4 py-5" id="icon-grid">
-                    <h2 class="pb-2 border-bottom">Feature List</h2>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-                        <div class="col d-flex align-items-start">
-                            <img class="rounded-lg-3 me-3" src="/assets/images/best-price.svg" alt="" width="40">
-                            <div>
-                                <h4 class="fw-bold mb-0">Featured title</h4>
-                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            <section class="logoTicker container-fluid text-center py-4 bg-white">
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/assets/images/spectrum-logo.png" class="img-fluid" alt="spectrum">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/assets/images/att-logo.png" class="img-fluid" alt="AT&T">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/assets/images/windstream-logo.png" class="img-fluid" alt="Windstream">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/assets/images/directv-logo.png" class="img-fluid" alt="Direct TV">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/assets/images/metronet-logo.png" class="img-fluid" alt="Metronet">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/assets/images/centurylink.png" class="img-fluid" alt="CenturyLink">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/assets/images/fidium-duth-dealer.png" class="img-fluid" alt="Fidium">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/assets/images/frontier-communications.png" class="img-fluid" alt="Frontier">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/assets/images/ziply.png" class="img-fluid" alt="Ziply">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/assets/images/earthlink-logo-1.png" class="img-fluid" alt="Earthlink">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col d-flex align-items-start">
-                            <img class="rounded-lg-3 me-3" src="/assets/images/best-price.svg" alt="" width="40">
-                            <div>
-                                <h4 class="fw-bold mb-0">Featured title</h4>
-                                <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-start">
-                            <img class="rounded-lg-3 me-3" src="/assets/images/best-price.svg" alt="" width="40">
-                            <div>
-                                <h4 class="fw-bold mb-0">Featured title</h4>
-                                <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-start">
-                            <img class="rounded-lg-3 me-3" src="/assets/images/best-price.svg" alt="" width="40">
-                            <div>
-                                <h4 class="fw-bold mb-0">Featured title</h4>
-                                <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-start">
-                            <img class="rounded-lg-3 me-3" src="/assets/images/best-price.svg" alt="" width="40">
-                            <div>
-                                <h4 class="fw-bold mb-0">Featured title</h4>
-                                <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-start">
-                            <img class="rounded-lg-3 me-3" src="/assets/images/best-price.svg" alt="" width="40">
-                            <div>
-                                <h4 class="fw-bold mb-0">Featured title</h4>
-                                <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-start">
-                            <img class="rounded-lg-3 me-3" src="/assets/images/best-price.svg" alt="" width="40">
-                            <div>
-                                <h4 class="fw-bold mb-0">Featured title</h4>
-                                <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-start">
-                            <img class="rounded-lg-3 me-3" src="/assets/images/best-price.svg" alt="" width="40">
-                            <div>
-                                <h4 class="fw-bold mb-0">Featured title</h4>
-                                <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="featureList-2">
-                <div class="container px-4 py-5" id="featured-3">
-                    <h2 class="pb-2 border-bottom">Columns with icons</h2>
-                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                        <div class="feature col">
-                            <div class="feature-icon bg-primary bg-gradient">
-                                <img class="rounded-lg-3 mb-3" src="/assets/images/best-price.svg" alt="" width="40">
-                            </div>
-                            <h2>Featured title</h2>
-                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="#" class="icon-link">
-                                Call to action
-                            </a>
-                        </div>
-                        <div class="feature col">
-                            <div class="feature-icon bg-primary bg-gradient">
-                                <img class="rounded-lg-3 mb-3" src="/assets/images/best-price.svg" alt="" width="40">
-                            </div>
-                            <h2>Featured title</h2>
-                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="#" class="icon-link">
-                                Call to action
-                            </a>
-                        </div>
-                        <div class="feature col">
-                            <div class="feature-icon bg-primary bg-gradient">
-                                <img class="rounded-lg-3 mb-3" src="/assets/images/best-price.svg" alt="" width="40">
-                            </div>
-                            <h2>Featured title</h2>
-                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="#" class="icon-link">
-                                Call to action
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <footer class="py-5 container">
-            <div class="row">
-                <div class="col-2">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
-                <div class="col-4 offset-1">
-                    <form>
-                        <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of whats new and exciting from us.</p>
-                        <div class="d-flex w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="d-flex justify-content-between py-4 my-4 border-top">
-                <p>© 2021 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3">
-                        <a class="link-dark" href="#">
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
+                        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-prev-icon bg-dark rounded" aria-hidden="true"></span>
                         </a>
+                        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-next-icon bg-dark rounded" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid featureList-2">
+                <div class="container px-4 py-5 text-center" id="featured-3">
+                    <p class="pb-2 border-bottom h2 fw-bold">Why Us</p>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-4 justify-content-between">
+                        <div class="feature col pb-2">
+                            <div class="feature-icon bg-primary bg-gradient">
+                                <i class="fa fa-location-dot" aria-hidden="true"></i>
+                            </div>
+                            <p class="h5 fw-bold">Discover</p>
+                            <p class="py-3">Discover all local internet, TV, and Home phone providers effortlessly!</p>
+                        </div>
+                        <div class="feature col pb-2">
+                            <div class="feature-icon bg-primary bg-gradient">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                            <p class="h5 fw-bold">Explore</p>
+                            <p class="py-3">Explore the full spectrum of services, plans, and packages in your area.</p>
+                        </div>
+                        <div class="feature col pb-2">
+                            <div class="feature-icon bg-primary bg-gradient">
+                                <i class="fa-solid fa-scale-unbalanced"></i>
+                            </div>
+                            <p class="h5 fw-bold">Compare</p>
+                            <p class="py-3">Simplify comparing packages, prices, and features from different providers.</p>
+                        </div>
+                        <div class="feature col pb-2">
+                            <div class="feature-icon bg-primary bg-gradient">
+                                <i class="fa-solid fa-cubes"></i>
+                            </div>
+                            <p class="h5 fw-bold">Bundle</p>
+                            <p class="py-3">Enhance subscription value by bundling services. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="internetProviders">
+                <div class="container-fluid text-center my-4 py-4 bg-white">
+                    <h4 class="text-center h2 fw-bold pb-2">Your Ultimate Destination for Premier Internet Service Providers</h4>
+                    <p class="lead mb-4">Your All-in-One Solution!</p>
+                    <div class="row mx-auto my-auto justify-content-center py-4">
+                        <div id="internetProvidersCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-md-3">
+                                        <div class="card h-100 mx-4">
+                                            <div class="card-img">
+                                                <img src="/assets/images/att-logo.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                AT&T, a leading and highly recognized brand in the U.S., delivers lightning-fast home internet with an unbeatable Fiber service. Count on AT&T broadband services for top-rated customer satisfaction!
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-primary fw-bold" href="#">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card h-100 mx-4">
+                                            <div class="card-img">
+                                                <img src="/assets/images/centurylink.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                CenturyLink leads with cutting-edge solutions in the telecommunications industry, providing you with exceptional connectivity distinguished by its technological prowess.
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-primary fw-bold" href="#">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card h-100 mx-4">
+                                            <div class="card-img">
+                                                <img src="/assets/images/frontier-communications.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                Frontier is a trailblazer committed to transforming your communication and entertainment experience. From lightning-fast internet to crystal-clear home phone services, Frontier sets itself apart with a diverse range of solutions tailored to meet your unique digital needs.
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-primary fw-bold" href="#">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card h-100 mx-4">
+                                            <div class="card-img">
+                                                <img src="/assets/images/ziply.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                Ziply is on a mission to redefine your online experience, bringing you state-of-the-art Fiber-optic technology for unparalleled speed and reliability.
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-primary fw-bold" href="#">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card h-100 mx-4">
+                                            <div class="card-img">
+                                                <img src="/assets/images/fidium-duth-dealer.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                Fidium is dedicated to providing you with innovative solutions for seamless internet and communication experiences. Experience the future of connectivity with Fidium, where technology meets reliability. 
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-primary fw-bold" href="#">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card h-100 mx-4">
+                                            <div class="card-img">
+                                                <img src="/assets/images/windstream-logo.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                With a commitment to delivering high-speed internet and reliable communication services, Windstream is here to elevate your digital experience. Step into a world of connectivity excellence with Windstream.
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-primary fw-bold" href="#">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card h-100 mx-4">
+                                            <div class="card-img">
+                                                <img src="/assets/images/earthlink-logo-1.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                As a trusted name in the industry, Earthlink brings you reliable internet and communication services designed to keep you seamlessly connected. Join us on a journey where reliability and innovation converge, making Earthlink your preferred choice for digital living.
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-primary fw-bold" href="#">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card h-100 mx-4">
+                                            <div class="card-img">
+                                                <img src="/assets/images/metronet-logo.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                Unleash the power of ultra-fast internet with Metronet. As a provider of cutting-edge Fiber-optic technology, Metronet is dedicated to transforming your online experience.
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-primary fw-bold" href="#">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card h-100 mx-4">
+                                            <div class="card-img">
+                                                <img src="/assets/images/spectrum-logo.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                Step into a realm of limitless possibilities with Spectrum. As a leading provider of internet, cable, and phone services, Spectrum is committed to keeping you connected in the fast-paced digital age. 
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-primary fw-bold" href="#">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev bg-transparent w-aut" href="#internetProvidersCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-prev-icon bg-dark rounded" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#internetProvidersCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-next-icon bg-dark rounded" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="promptBanner container my-4 py-4">
+                <div class="row">
+                    <div class="col-12 col-md-7 py-4">
+                        <p class="h2 fw-bold pb-2 pt-4">Explore premier Internet and TV providers available in your Area.</p>
+                        <p class="lead">Curious about the top internet and cable TV providers in your vicinity? Speak with our experts, and we'll uncover the best offers for you to choose from!</p>
+                        <a href="tel:800-000-0000" class="btn btn-primary fw-bold my-4 btn-lg">
+                            800-000-0000
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <img src="/assets/images/location-2.png" id="promptBannerImage">
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid my-4 py-4 bg-white homeEssentials">
+                <p class="h2 fw-bold pb-2 pt-4 text-center">Three Must-Have Home Essentials for Connectivity and Entertainment</p>
+                <div class="container col-xxl-8 my-4">
+                    <div class="row flex-lg-row-reverse align-items-center g-5">
+                        <div class="col-10 col-sm-8 col-lg-6 framed-bkg">
+                            <img src="/assets/images/internet-options.jpg" class="d-block mx-lg-auto img-fluid" height="600" style="height:600px" alt="Internet Options" loading="lazy">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="h2 fw-bold pb-2">Dependable & High-Speed Internet </h3>
+                            <p>Dealing with a subpar internet service can be incredibly frustrating, especially when it hampers work, school, video chats with friends, and sharing on social media. If you frequently encounter these challenges, take the opportunity to explore and compare your options on a single platform. Choose a reliable service for your home without the usual hassles of the selection process. Connect with our experts today ― call us at 800-000-0000</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                                <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="tel:800-000-0000">Discover Internet Options</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-xxl-8">
+                    <div class="row flex-lg-row align-items-center g-5">
+                        <div class="col-10 col-sm-8 col-lg-6 framed-bkg">
+                            <img src="/assets/images/tv-options-1.jpg" class="d-block mx-lg-auto img-fluid" height="600" style="height:600px" alt="TV Options" loading="lazy">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="h2 fw-bold pb-2">Elevated Entertainment Options</h3>
+                            <p>Discover the finest packages from leading TV providers nationwide, catering to both cable TV and satellite TV preferences. Whether you're a movie enthusiast or a sports fanatic, we have options tailored to meet your needs.</p>
+                            <p>Experience the convenience of comparing channel packages in one central location, with the added benefit of professional advice if required. Simply dial 800-000-0000 and speak to an expert for personalized guidance.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                                <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="tel:800-000-0000">Discover TV Options</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-xxl-8">
+                    <div class="row flex-lg-row-reverse align-items-center g-5">
+                        <div class="col-10 col-sm-8 col-lg-6 framed-bkg">
+                            <img src="/assets/images/phone-options.jpg" class="d-block mx-lg-auto img-fluid" height="600" style="height:600px" alt="Phone Options" loading="lazy">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="h2 fw-bold pb-2">Cost-Saving Phone Service Offers </h3>
+                            <p>Don't underestimate the value of a reliable digital home phone service, even if you rely on your cellular connection. Whether you frequently connect with loved ones nationwide or work from home, an Internet & Phone service deal from a top provider can be a money-saving solution.</p>
+                            <p>Enrich your internet plan by adding a dependable phone service at a discounted rate. Unlimited nationwide talk time, coupled with valuable digital calling features, makes this deal more than worthwhile.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                                <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="tel:800-000-0000">Discover Phone Options</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid text-center mt-md-4 pt-4 topDeals">
+                <p class="h2 fw-bold pb-2">Prime Deals on TV, Internet, and Phone Services from Leading Providers</p>
+                <ul class="nav nav-pills mb-3 justify-content-center py-4" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-spectrum-tab" data-bs-toggle="pill" data-bs-target="#pills-spectrum" type="button" role="tab" aria-controls="pills-spectrum" aria-selected="true">Spectrum</button>
                     </li>
-                    <li class="ms-3">
-                        <a class="link-dark" href="#">
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram"></use>
-                            </svg>
-                        </a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-atnt-tab" data-bs-toggle="pill" data-bs-target="#pills-atnt" type="button" role="tab" aria-controls="pills-atnt" aria-selected="false">AT&T</button>
                     </li>
-                    <li class="ms-3">
-                        <a class="link-dark" href="#">
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                        </a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-frontier-tab" data-bs-toggle="pill" data-bs-target="#pills-frontier" type="button" role="tab" aria-controls="pills-frontier" aria-selected="false">Frontier</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-centuryLink-tab" data-bs-toggle="pill" data-bs-target="#pills-centuryLink" type="button" role="tab" aria-controls="pills-centuryLink" aria-selected="false">CenturyLink</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-kinetic-tab" data-bs-toggle="pill" data-bs-target="#pills-kinetic" type="button" role="tab" aria-controls="pills-kinetic" aria-selected="false">Kinetic Windstream</button>
                     </li>
                 </ul>
+                <div class="tab-content providerPlans mb-md-4 py-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-spectrum" role="tabpanel" aria-labelledby="pills-spectrum-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Spectrum Internet</h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$49.99</span>/mo.</p>
+                                            <p class="small card-excerpt">Valid for 12 months </p>
+                                            <ul class="card-text">
+                                                <li>Get download speeds up to 300 Mbps (Wireless speeds may vary)</li>
+                                                <li>No contracts and no data caps</li>
+                                                <li>Enjoy FREE access to out-of-home WiFi hotspots</li>
+                                                <li>Receive a complimentary Internet modem and antivirus software</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Spectrum Internet + TV</h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$109.98</span>/mo.</p>
+                                            <p class="small card-excerpt">Valid for 12 months</p>
+                                            <ul class="card-text">
+                                                <li>Get download speeds up to 300 Mbps (Wireless speeds may vary)</li>
+                                                <li>No contracts and no data caps</li>
+                                                <li>Access 125+ channels, including ESPN, Discovery, CNN, Lifetime, HGTV, and MTV</li>
+                                                <li>Enjoy TV on-the-go with the Spectrum TV App</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Spectrum Internet + TV + Phone </h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$129.97</span>/mo.</p>
+                                            <p class="small card-excerpt">Valid for 12 months when bundled</p>
+                                            <ul class="card-text">
+                                                <li>Experience download speeds up to 300 Mbps (Wireless speeds may vary)</li>
+                                                <li>No contracts and no data caps</li>
+                                                <li>Access 125+ channels, including ESPN, Discovery, CNN, Lifetime, HGTV, and MTV</li>
+                                                <li>Enjoy TV on-the-go with the Spectrum TV App</li>
+                                                <li>Benefit from unlimited nationwide calling</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-atnt" role="tabpanel" aria-labelledby="pills-atnt-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">AT&T High-Speed Internet</h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$55</span>/mo.</p>
+                                            <ul class="card-text">
+                                                <li>Experience download speeds up to 100 Mbps</li>
+                                                <li>Stay productive and entertained with consistent speeds, even during peak times </li>
+                                                <li>Based on a wired connection to the gateway</li>
+                                                <li>No annual contracts and no data caps</li>
+                                                <li>No additional equipment fees</li>
+                                                <li>Enjoy FREE access to thousands of out-of-home AT&T WiFi hotspots</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">AT&T Fiber Internet </h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$55</span>/mo.</p>
+                                            <ul class="card-text">
+                                                <li>300 Mbps with symmetrical upload and download speeds</li>
+                                                <li>Swift internet for the entire family</li>
+                                                <li>Stream HD videos, game online, and share large files effortlessly</li>
+                                                <li>No annual contracts and no data caps</li>
+                                                <li>No additional equipment fees</li>
+                                                <li>Enjoy FREE access to thousands of AT&T WiFi hotspots outside your home</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">AT&T Fiber Internet </h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$80</span>/mo.</p>
+                                            <ul class="card-text">
+                                                <li>Symmetrical upload and download speeds up to 1 Gbps</li>
+                                                <li>Ideal for smart homes, offering the fastest speed</li>
+                                                <li>Perfect for serious online gamers and home office power users</li>
+                                                <li>No annual contracts and no data caps</li>
+                                                <li>No additional equipment fees</li>
+                                                <li>Enjoy FREE access to thousands of AT&T WiFi hotspots outside your home</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-frontier" role="tabpanel" aria-labelledby="pills-frontier-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Frontier Fiber 500</h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$39.99</span>/mo.</p>
+                                            <ul class="card-text">
+                                                <li>Perfect for work, streaming, and playing on multiple devices</li>
+                                                <li>Experience 4K entertainment</li>
+                                                <li>Includes Amazon eero 6+ router</li>
+                                                <li>No annual contracts and no data caps</li>
+                                                <li>No additional equipment fees</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Frontier Fiber 1 Gig</h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$59.99</span>/mo.</p>
+                                            <ul class="card-text">
+                                                <li>Tailored for smart homes with numerous devices</li>
+                                                <li>Optimized for gaming with virtually no lag</li>
+                                                <li>Includes Amazon eero Pro 6 router</li>
+                                                <li>No annual contracts and no data caps</li>
+                                                <li>No additional equipment fees</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Frontier Fiber 2 Gig</h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$99.99</span>/mo.</p>
+                                            <ul class="card-text">
+                                                <li>Ultra-fast speeds for large smart homes</li>
+                                                <li>Ideal for immersive gaming and streaming</li>
+                                                <li>Includes Amazon eero Pro 6E router</li>
+                                                <li>No annual contracts and no data caps</li>
+                                                <li>No additional equipment fees</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-centuryLink" role="tabpanel" aria-labelledby="pills-centuryLink-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 offset-md-2">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Simply Unlimited Internet</h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$55</span>/mo.</p>
+                                            <ul class="card-text">
+                                                <li>Upload speeds 20 times faster than cable</li>
+                                                <li>Unlimited data on a network with 99.9% reliability</li>
+                                                <li>Enjoy FREE installation - a $129 value</li>
+                                                <li>WiFi equipment provided at no monthly charge</li>
+                                                <li>No annual contract</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fiber Internet</h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$75</span>/mo.</p>
+                                            <ul class="card-text">
+                                                <li>Experience upload speeds 20 times faster than cable</li>
+                                                <li>Enjoy unlimited data on a network with 99.9% reliability </li>
+                                                <li>Benefit from FREE installation - valued at $129</li>
+                                                <li>WiFi equipment provided with no monthly charge</li>
+                                                <li>No annual contract</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-kinetic" role="tabpanel" aria-labelledby="pills-kinetic-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">500 Mbps</h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$39.99</span>/mo.</p>
+                                            <ul class="card-text">
+                                                <li>500 Upload / 500 Download</li>
+                                                <li>Ideal for your entire family</li>
+                                                <li>Up to 2.5 times faster upload speeds than basic cable</li>
+                                                <li>500 Upload / 500 Download</li>
+                                                <li>No annual contract</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">1 Gig</h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$69.99</span>/mo.</p>
+                                            <ul class="card-text">
+                                                <li>1,000 Upload / 1,000 Download</li>
+                                                <li>Perfect for streaming, gaming, or heavy internet use</li>
+                                                <li>Seamless streaming and video calls</li>
+                                                <li>Up to 5 times faster upload speeds than basic cable</li>
+                                                <li>No Annual Contract</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-md-start h-100 mb-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">2 Gig</h5>
+                                            <p class="lead card-cost"><span class="h4 fw-bold text-primary">$129.99</span>/mo.</p>
+                                            <ul class="card-text">
+                                                <li>2,000 Upload / 2,000 Download</li>
+                                                <li>For power users, high-bandwidth tasks, or connecting your smart home</li>
+                                                <li>Keep your entire home connected</li>
+                                                <li>Up to 10 times faster upload speeds than basic cable</li>
+                                                <li>No Annual Contract</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary fw-bold">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container-fl internetTypesSection py-4 bg-white">
+                <div class="text-center">
+                    <div class="row mb-4">
+                        <h3 class="col-12 h2 fw-bold pb-2">What Internet Connection Suits Your Needs?</h3>
+                    </div>
+                    <div class="row internetTypes py-4">
+                        <div class="col pt-4">
+                            <h4 class="h5 fw-bold mb-2">Fiber</h4>
+                            <p>Fiber Internet, the latest residential service, is not as widely available as other wired types. It offers the ultimate internet experience with super-fast symmetrical speeds and ultra-low latency. More bandwidth ensures consistency and reliability.</p>
+                        </div>
+                        <div class="col pt-4">
+                            <h4 class="h5 fw-bold mb-2">Cable</h4>
+                            <p>Cable Internet, readily available and popular, covers nearly 90% of the U.S. population. It provides super-fast speeds at affordable rates, allowing for downloads up to 1.2 Gigabit. Ideal for activities like video streaming and competitive gaming.</p>
+                        </div>
+                        <div class="col pt-4">
+                            <h4 class="h5 fw-bold mb-2">DSL</h4>
+                            <p>DSL, the most commonly available wired Internet type, is especially prevalent in rural America. In many urban and suburban areas, major DSL internet providers now offer enhanced speeds using a mix of new technologies. High-speed DSL Internet is suitable for homes with fewer devices and standard usage.</p>
+                        </div>
+                        <div class="col pt-4">
+                            <h4 class="h5 fw-bold mb-2">Satellite</h4>
+                            <p>Satellite internet is an ideal choice for residents in remote and rural regions where wired high-speed internet is unavailable. In areas where slow DSL is the only option, satellite internet becomes a strong contender due to its ready accessibility. While not the best for extensive gaming or HD video streaming, it serves many people effectively.</p>
+                        </div>
+                        <div class="col pt-4">
+                            <h4 class="h5 fw-bold mb-2">Fixed Wireless</h4>
+                            <p>Fixed Wireless is becoming the preferred choice in areas where no wired high-speed internet option is available. On average, fixed wireless internet provides faster downloads, lower latency, and is more cost-effective than satellite internet. When no other high-speed internet option is available, Fixed Wireless outperforms Satellite.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="differentiator container-fluid py-4">
+                <p class="h2 fw-bold text-center pb-2">
+                    Discover the difference
+                </p>
+                <div class="container-fluid py-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card text-md-start h-100 mb-4">
+                                <div class="card-header h5 fw-bold">
+                                    <p class="mb-0">Unlock a Seamless Comparison Experience</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Find all major internet providers converging in one place. Simplifying your decision-making process, we've made it effortless for you to explore details, make comparisons, and make an informed choice.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-md-start h-100 mb-4">
+                                <div class="card-header h5 fw-bold">
+                                    <p class="mb-0">Your Search, Streamlined</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Experience the ease of navigating through the hottest deals in your local market. With just a ZIP code entry, we curate offers from the finest internet service providers in your area, streamlining your search for the perfect connection.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-md-start h-100 mb-4">
+                                <div class="card-header h5 fw-bold">
+                                    <p class="mb-0">Bundle Up for Better Value!</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Indulge in exciting bundle deals curated from top service providers. Elevate your home with all the essential services while gaining more value for your hard-earned money. We don't just offer connections; we bring you a bundle of benefits!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq bg-white py-3 py-md-5 py-xl-8">
+                <div class="container">
+                    <div class="h2 fw-bold text-center pb-2">Frequently Asked Questions</div>
+                    <div class="accordion accordion-flush row py-4" id="faqAccordion">
+                        <div class="col-md-6">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        What is FastInternetGeek?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        FastInternetGeek is your dedicated destination for seamless connectivity solutions. We specialize in offering high-speed internet, cable, and phone services from leading providers like AT&T, CenturyLink, Frontier Communications, Ziply, Fidium, Windstream, Earthlink, Metronet, and Spectrum. Call our experts at 800-000-0000 anytime for personalized assistance.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What services does FastInternetGeek provide?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        FastInternetGeek has partnered with top-tier internet and TV service providers to cater to your digital needs. We guide you in finding, comparing, and securing the best deals from renowned providers in the U.S. Call our professionals at 800-000-0000 around the clock for expert advice.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        How can I compare internet providers on FastInternetGeek?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        At FastInternetGeek, we prioritize a personalized approach. Rather than using a ZIP search tool, we encourage you to call our experts at 800-000-0000. Our professionals will understand your individual needs and recommend a plan tailored to you.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Which internet and TV providers does FastInternetGeek recommend?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        FastInternetGeek recommends top-notch providers including AT&T, CenturyLink, Frontier Communications, Ziply, Fidium, Windstream, Earthlink, Metronet, and Spectrum. Our focus is on matching you with a provider that meets your needs and budget.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        What is the fastest internet in my area with FastInternetGeek?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        To discover the fastest internet in your area, call us at 800-000-0000. Our experts will provide tailored recommendations based on your location and needs, ensuring you get the best connectivity.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collaspseSix" aria-expanded="false" aria-controls="collaspseSix">
+                                        What is the best alternative to cable internet?
+                                    </button>
+                                </h2>
+                                <div id="collaspseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        FastInternetGeek suggests pure fiber as the best alternative to cable internet. Fiber technology ensures a seamless streaming and gaming experience, even with multiple devices connected to your network.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        Who are the affordable internet providers?
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Some of the most affordable internet providers recommended by FastInternetGeek include AT&T, Xfinity, Spectrum, and Mediacom. Call us at 800-000-0000 to check which providers serve your area.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingEight">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                        How much do internet and cable TV cost/mo. with FastInternetGeek?
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Pricing for internet and cable TV with FastInternetGeek depends on your location and selected provider. For personalized quotes, call us at 800-000-0000 to get the latest and best deals.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNine">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                        How can I order services through FastInternetGeek?
+                                    </button>
+                                </h2>
+                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Ordering services with FastInternetGeek is simple. Just call us at 800-000-0000, and our experts will ensure you receive the assistance you need. Whether you're in the research phase or ready to subscribe, we're here for you.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTen">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                        How accurate is the information displayed on FastInternetGeek?
+                                    </button>
+                                </h2>
+                                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The information on FastInternetGeek is meticulously researched by our team to ensure accuracy. We are dedicated to providing reliable data, empowering you to make informed decisions and choose the best deal for your needs.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <footer class="pt-5 container-fluid">
+            <div class="row footerTop">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row py-4">
+                            <div class="col-12 col-md-3">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-bold">Internet</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-bold">Home Phone</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-bold">TV</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-bold">Providers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-bold">About Us</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-bold">Contact Us</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-bold">Terms and Conditions</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-bold">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-5 offset-md-1 text-center">
+                                <div>
+                                    <img src="/assets/images/logo-white.png" alt="Fast Internet Geek" width="200">
+                                </div>
+                                <div class="mt-4">
+                                    <ul class="d-flex nav justify-content-center" style="gap:15px;">
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/images/youtube.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/images/twitter.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/images/instagram.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/images/facebook.png">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footerBottom">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="d-flex justify-content-between py-4">
+                            <p>© 2021 FastInternetGeek, Inc. All rights reserved.</p>
+                            <ul class="list-unstyled d-flex">
+                                <li class="ms-3">
+                                    <a class="link-dark" href="#">
+                                        <svg class="bi" width="24" height="24">
+                                            <use xlink:href="#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ms-3">
+                                    <a class="link-dark" href="#">
+                                        <svg class="bi" width="24" height="24">
+                                            <use xlink:href="#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ms-3">
+                                    <a class="link-dark" href="#">
+                                        <svg class="bi" width="24" height="24">
+                                            <use xlink:href="#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
-        <section class="sample_component">
-            <form class="mt-3 mt-lg-0 ms-lg-3 d-flex align-items-center">
-                <span class="position-absolute ps-3 search-icon">
-                <i class="fe fe-search"></i>
-                </span>
-                <label for="search" class="visually-hidden"></label>
-                <input type="search" id="search" class="form-control ps-6" placeholder="Search Item">
-            </form>
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <script src="/js/scripts.js"></script>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>

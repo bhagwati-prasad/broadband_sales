@@ -1,56 +1,47 @@
-/* Start Style Resets */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* End Style Resets */
-
 /* Start Base CSS */
 body {
 	font-family: 'Tahoma', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-color: rgb(var(--theme_body_background));
 }
-a {
+a:not('.btn') {
     color: rgb(var(--theme_linkTextColor)) !important;
     text-decoration: none;
+}
+.h1, h1 {
+	color: rgb(var(--theme_h1Color));
+}
+.h2, h2 {
+	color: rgb(var(--theme_h2Color));
+}
+.h3, h3 {
+	color: rgb(var(--theme_h3Color));
+}
+.h4, h4 {
+	color: rgb(var(--theme_h4Color));
+}
+.h5, h5 {
+	color: rgb(var(--theme_h5Color));
+}
+.h6, h6 {
+	color: rgb(var(--theme_h6Color));
+}
+a {
+    text-decoration: none;
+}
+.navbar-nav {
+    gap: 2rem;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 50px !important;
+}
+.faq .accordion-item {
+    background-color: #fafafa;
+}
+.faq .accordion-item .accordion-button:not(.collapsed) {
+    background-color: rgba(var(--theme_offerBanner_backgroundColor));
+}
+.faq .accordion-button:focus {
+    background-color: rgba(var(--theme_offerBanner_backgroundColor));
 }
 /* End Base CSS */
 
@@ -70,51 +61,166 @@ a {
     justify-content: space-between;
 }
 #headerTop .brand-logo {
-    height: 50px;
+    height: 75px;
+}
+
+.framed-bkg {
+    background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(170,170,170,1) 35%, rgba(238,238,238,1) 100%);
+    border-radius: 60%;
+    border: 30px solid #f1f1f1;
+}
+.framed-bkg img {
+    border: 20px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+}
+.topDeals .nav-link {
+    padding: 10px 90px;
+    margin: 0 5px;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+.providerPlans .card-title {
+    font-weight: bold;
 }
 /* End Layout */
 
 
 /* Start Component */
 .topMessage {
-	height: 50px;
 	line-height: 50px;
+    background-color: rgb(var(--theme_offerBanner_textColor));
 }
 
 .offerBanner {
     color: rgb(var(--theme_offerBanner_textColor));
-    background-color: rgba(var(--theme_offerBanner_backgroundColor), var(--theme_offerBanner_backgroundOpacity));
+    background-color: rgba(var(--theme_offerBanner_backgroundColor));
+	box-shadow: inset 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
 }
 .offerIcon {
 	max-width: 100px;
 }
-.offerMessage {
-	
+.offerIcon .fa-solid {
+    font-size: 4.5rem;
+    text-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
 }
-
+.hero {
+	background-color: rgb(var(--theme_hero_background));
+	background-image: url("/assets/images/bg-building.png");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
 .logoTicker {
-	height: 200px;
-	padding: 50px 0;
-	overflow: hidden;
-	background-color: rgb(var(--theme_logoTicker_backgroundColor))
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.2)
 }
-.logoTicker .carousel-item {
-	height: 100px;
+.logoTicker .card {
+    border: none;
 }
-.logoTicker .carousel-item img {
-	height: 100%;
-	margin: 0 auto;
+.logoTicker .card img {
+    width: 150px;
+}
+#promptBannerImage {
+    transform: translate(0, -20px) rotate(0deg) scale(0.8);
+}
+.internetTypes .col:nth-child(odd) {
+	background-color: rgb(var(--theme_internetTypesOdd_background));
+}
+.internetTypes .col:nth-child(even) {
+	background-color: rgb(var(--theme_internetTypesEven_background));
+}
+.providerPlans li {
+    list-style: none;
+	background: url("/assets/images/blue-check.png") left 3px no-repeat;
+    background-size: 20px 20px;
+    padding-left: 25px;
+}
+.differentiator {
+    background-color: #eee;
+}
+.faq .accordion-item {
+	border-radius: 5px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+.faq .accordion-item .accordion-button {
+    background-color: #fafafa;
+}
+.footerTop {
+	background-color: rgba(var(--theme_offerBanner_textColor), 0.8);
+}
+.footerTop * {
+	color: rgb(var(--theme_footerTop_color)) !important;
+}
+.footerBottom * {
+	background-color: rgb(var(--theme_offerBanner_textColor));
+	color: rgb(var(--theme_footerBottom_color)) !important;
 }
 /* End Component */
-
-.feature-icon {
+.featureList-2 .feature {
+    background-color: rgb(var(--theme_offerBanner_backgroundColor));
+    border-radius: 7px;
+    position: relative;
+    width: 23%;
+}
+.featureList-2 .feature .feature-icon {
+    position: relative;
+    top: -20px;
+    border: 4px solid #fff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
-    border-radius: 0.75rem;
+    border-radius: 50%;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .topMessage {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+.logoTicker .carousel-inner .card {
+	background: transparent;
 }
