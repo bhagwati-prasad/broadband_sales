@@ -135,6 +135,10 @@ a {
     background-size: 20px 20px;
     padding-left: 25px;
 }
+.homeEssentials img {
+    max-height: 600px;
+    background-color: #FFFFFF;
+}
 .differentiator {
     background-color: #eee;
 }
@@ -161,7 +165,6 @@ a {
     background-color: rgb(var(--theme_offerBanner_backgroundColor));
     border-radius: 7px;
     position: relative;
-    width: 23%;
 }
 .featureList-2 .feature .feature-icon {
     position: relative;
