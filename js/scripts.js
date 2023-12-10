@@ -20,3 +20,4 @@ function setupCarousel(elem) {
 
 setupCarousel(".logoTicker .carousel .carousel-item")
 setupCarousel(".internetProviders .carousel .carousel-item")
+setupCarousel(".multiCarousel .carousel .carousel-item")
