@@ -180,6 +180,9 @@ a {
     color: #fff;
     border-radius: 50%;
 }
+.featureList-2 .feature p.h5 {
+    min-height: 50px;
+}
 
 
 
